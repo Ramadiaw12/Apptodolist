@@ -31,6 +31,7 @@ class ToApp extends React.Component{
     }));
   };
   
+  // Ajout des tâches à faires dans Addtask pour l'afficher dans la page todolist 
   onAddTask = (newTaskName) => {
     let newTask = {
       id: uniqueId(),
@@ -44,7 +45,7 @@ class ToApp extends React.Component{
   };
   
   
-  
+  // Boutton supprimer pour supprimer les tâches dans déjà completed
   onDeleteCompleted = () => {
     this.setState(prevState => {
       let newState = prevState.tasks.filter(task => !task.completed)

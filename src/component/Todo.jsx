@@ -29,7 +29,7 @@ class Todo extends React.Component {
         return(
             
             <>
-
+                
                 <li className={"flex justify-between items-center border text-xl font-black border-gray-300 p-4 rounded-sm " + (this.state.completed? 'bg-sky-500': 'null')} >
                 {this.props.task.name}
                 <button className={"btn btn-sm border-2 border-sky-300 px-5 py-2 text-blue-300 hover:bg-sky-500 rounded-md grid-flow-row" + (this.state.completed? 'bg-sky-300': 'btn-outline-success')} onClick={this.ToggleCompleted} >&#x2713;</button>
