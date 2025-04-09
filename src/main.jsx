@@ -15,9 +15,9 @@ import uniqueId from 'uniqueid';
 
 
 class ToApp extends React.Component{
-  constructor(props){
-    super(props);
-    this.state = {
+  constructor(props){ // Pour permettre l'accès au composant this.props. props est en paramètres
+    super(props); // Appel le contructeur de la class parent (React.Component) et initialise de composant (this.props)
+    this.state = { // Définit l'état local
       tasks: initialData
     } 
   }
